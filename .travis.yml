@@ -12,6 +12,11 @@ cache:
   - downloads
   - .cache/pip
 
+
+before_script:
+- which pip
+- pip list
+
 script: |
   #set -e
   set -x
